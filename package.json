@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "npm run dev",
-    "lint": "eslint '**/*.js'",
-    "lint:fix": "eslint '**/*.js' --fix",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
     "build": "vite build",
     "dev": "vite dev --host",
     "postinstall": "husky"
@@ -16,8 +16,11 @@
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.11.1",
     "@types/node": "^22.7.6",
-    "eslint": "^9.11.1",
+    "@typescript-eslint/eslint-plugin": "^8.10.0",
+    "@typescript-eslint/parser": "^8.10.0",
+    "eslint": "^9.12.0",
     "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-prettier": "^5.2.1",
     "globals": "^15.9.0",
     "husky": "^9.1.6",
@@ -31,7 +34,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
+      "npm run lint:fix",
       "bash ./check-eslint-disable.sh"
     ]
   }

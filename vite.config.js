@@ -3,7 +3,6 @@
 import { defineConfig } from 'vite'
 import blitsVitePlugins from '@lightningjs/blits/vite'
 
-// eslint-disable-next-line no-unused-vars
 export default defineConfig(({ command, mode }) => {
   return {
     base: '/', // Set to your base path if you are deploying to a subdirectory (example: /myApp/)

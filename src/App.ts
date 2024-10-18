@@ -1,6 +1,6 @@
-import Blits from '@lightningjs/blits'
+import Blits from '@lightningjs/blits';
 
-import Home from './pages/Home'
+import Home from './pages/Home';
 
 export default Blits.Application({
   template: `
