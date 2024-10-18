@@ -3,9 +3,10 @@
 import { defineConfig } from 'vite'
 import blitsVitePlugins from '@lightningjs/blits/vite'
 
-export default defineConfig(({ command, mode }) => {
+// eslint-disable-next-line no-empty-pattern
+export default defineConfig(({}) => {
   return {
-    base: '/', // Set to your base path if you are deploying to a subdirectory (example: /myApp/)
+    base: '/',
     plugins: [...blitsVitePlugins],
     resolve: {
       mainFields: ['browser', 'module', 'jsnext:main', 'jsnext'],
