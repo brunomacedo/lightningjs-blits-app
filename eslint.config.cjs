@@ -32,6 +32,14 @@ module.exports = [
     },
 
     rules: {
+      'no-warning-comments': [
+        'warn',
+        {
+          terms: ['eslint-disable-next-line', 'eslint-disable'],
+          location: 'anywhere',
+        },
+      ],
+
       'no-console': 'off',
       'no-debugger': 'off',
       quotes: [2, 'single', 'avoid-escape'],

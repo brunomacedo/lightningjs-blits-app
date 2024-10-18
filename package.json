@@ -30,8 +30,9 @@
     "@lightningjs/blits": "^1.7.1"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix"
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "bash ./check-eslint-disable.sh"
     ]
   }
 }
