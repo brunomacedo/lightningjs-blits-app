@@ -1,5 +1,4 @@
 import Blits from '@lightningjs/blits'
-
 import Home from './pages/Home'
 
 export default Blits.Application({

@@ -2,8 +2,8 @@ import Blits from '@lightningjs/blits'
 import App from './App'
 
 Blits.Launch(App, 'app', {
-  w: 1920,
-  h: 1080,
+  w: window.innerWidth,
+  h: window.innerHeight,
   multithreaded: false,
   debugLevel: 1,
   fonts: [
